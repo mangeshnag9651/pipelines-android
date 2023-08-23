@@ -12,8 +12,7 @@ pool:
 steps:
 - task: Gradle@3
   inputs:
-    gradleWrapperFile: 'gradlew'
-    workingDirectory: 'gradle/wrapper'
+    gradleWrapperFile: 'chmod gradlew'
     tasks: 'assembleDebug'
     publishJUnitResults: false
     javaHomeOption: 'JDKVersion'
